@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif, Verdana;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: -10;
+
+    div.background {
+        background-image: url('../../public/assets/ninja_2.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 95.5vh;
+        width: 95.5vw;
+        z-index: -5;
+        position: absolute;
+        opacity: 0.8;
+    }
+
+    header {
+        text-align: center;
+        font-size: 25px;
+        z-index: 10;
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        text-align: center;
+        flex-direction: column;
+        font-size: 20px;
+        z-index: 11;
+
+        div {
+            button {
+                padding: 15px 20px;
+                margin-top: 15%;
+                border-radius: 5px;
+                font-size: 20px;
+                border: 2px solid black;
+                color: rgb(212, 204, 204);
+                font-weight: 900;
+                cursor: pointer;
+            }
+            button:hover {
+                transform: scale(1.1);
+                transition: 1.5s;
+            }
+            h2#ninja-name {
+                margin-top: 15%;
+                text-transform: uppercase;
+                font-size: 50px;
+                text-shadow: 3px 1px 1px rgb(0, 0, 0);
+                background-color: black;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+$colors: (
+    1: rgb(134, 38, 38),
+    2: rgb(39, 126, 133),
+    3: rgb(39, 48, 133),
+    4: rgb(39, 133, 47)
+);
+
+@for $i from 1 through 4 {
+    .bg-color-#{$i}, .txt-color-#{$i} {
+        transition: 1.5s;
+    }
+}
+
+@each $key, $color in $colors {
+    .bg-color-#{$key} {
+        background-color: $color;
+    }
+
+    .txt-color-#{$key} {
+        color: $color;
+    }
+}

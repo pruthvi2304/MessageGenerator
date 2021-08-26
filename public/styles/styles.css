@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+body {
+  font-family: "Roboto", sans-serif, Verdana;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: -10;
+}
+body div.background {
+  background-image: url("../../public/assets/ninja_2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95.5vh;
+  width: 95.5vw;
+  z-index: -5;
+  position: absolute;
+  opacity: 0.8;
+}
+body header {
+  text-align: center;
+  font-size: 25px;
+  z-index: 10;
+}
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 20px;
+  z-index: 11;
+}
+body main div button {
+  padding: 15px 20px;
+  margin-top: 15%;
+  border-radius: 5px;
+  font-size: 20px;
+  border: 2px solid black;
+  color: #d4cccc;
+  font-weight: 900;
+  cursor: pointer;
+}
+body main div button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+body main div h2#ninja-name {
+  margin-top: 15%;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-shadow: 3px 1px 1px black;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.bg-color-1, .txt-color-1 {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.bg-color-2, .txt-color-2 {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.bg-color-3, .txt-color-3 {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.bg-color-4, .txt-color-4 {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.bg-color-1 {
+  background-color: #862626;
+}
+
+.txt-color-1 {
+  color: #862626;
+}
+
+.bg-color-2 {
+  background-color: #277e85;
+}
+
+.txt-color-2 {
+  color: #277e85;
+}
+
+.bg-color-3 {
+  background-color: #273085;
+}
+
+.txt-color-3 {
+  color: #273085;
+}
+
+.bg-color-4 {
+  background-color: #27852f;
+}
+
+.txt-color-4 {
+  color: #27852f;
+}
